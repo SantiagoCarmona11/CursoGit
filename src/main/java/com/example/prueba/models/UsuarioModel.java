@@ -20,6 +20,7 @@ public class UsuarioModel {
 
 	private String nombre;
 	private String gmail;
+	private int edad;
 
 	@ManyToOne
 	@JoinColumn(name = "id_prioridad", nullable = false)
@@ -47,6 +48,14 @@ public class UsuarioModel {
 
 	public void setGmail(String gmail) {
 		this.gmail = gmail;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
 	}
 
 	public PrioridadModel gerIdPrioridad() {
